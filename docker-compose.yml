@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app_data:/app/data  # Mounts the host directory (./app_data) to the container directory (/app/data)
+
